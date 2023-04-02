@@ -10,11 +10,72 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
+    static var typeId=1
+    static var productId=1
+    static var postId=1
+    static var companyId=1
+    static var orderId=1
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        do {
+            var type_items=try persistentContainer.viewContext.fetch(ProductType.fetchRequest())
+            if let typelastID = type_items.last?.id {
+                AppDelegate.typeId = Int(typelastID)+1
+            } else {
+                AppDelegate.typeId = 1
+            }
+        }
+        catch{
+            print("No Data")
+        }
+        do {
+            var type_items=try persistentContainer.viewContext.fetch(Product_Post.fetchRequest())
+            if let typelastID = type_items.last?.id {
+                AppDelegate.postId = Int(typelastID)+1
+            } else {
+                AppDelegate.postId = 1
+            }
+        }
+        catch{
+            print("No Data")
+        }
+        do {
+            var type_items=try persistentContainer.viewContext.fetch(Product.fetchRequest())
+            if let typelastID = type_items.last?.id {
+                AppDelegate.productId = Int(typelastID)+1
+            } else {
+                AppDelegate.productId = 1
+            }
+        }
+        catch{
+            print("No Data")
+        }
+        do {
+            var type_items=try persistentContainer.viewContext.fetch(Company.fetchRequest())
+            if let typelastID = type_items.last?.id {
+                AppDelegate.companyId = Int(typelastID)+1
+            } else {
+                AppDelegate.companyId = 1
+            }
+        }
+        catch{
+            print("No Data")
+        }
+        do {
+            var type_items=try persistentContainer.viewContext.fetch(Order.fetchRequest())
+            if let typelastID = type_items.last?.order_id {
+                AppDelegate.orderId = Int(typelastID)+1
+            } else {
+                AppDelegate.orderId = 1
+                
+            }
+        }
+        catch{
+            print("No Data")
+        }
         return true
     }
 
@@ -41,7 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "Assignment_8")
+        let container = NSPersistentContainer(name: "DataModel")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

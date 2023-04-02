@@ -7,25 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E22CBED29D640310059C6D4 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CBEB29D640310059C6D4 /* DataModel.xcdatamodeld */; };
+		7E22CC2129D6460D0059C6D4 /* ProductType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC1729D6460D0059C6D4 /* ProductType+CoreDataClass.swift */; };
+		7E22CC2229D6460D0059C6D4 /* ProductType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC1829D6460D0059C6D4 /* ProductType+CoreDataProperties.swift */; };
+		7E22CC2329D6460D0059C6D4 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC1929D6460D0059C6D4 /* Product+CoreDataClass.swift */; };
+		7E22CC2429D6460D0059C6D4 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC1A29D6460D0059C6D4 /* Product+CoreDataProperties.swift */; };
+		7E22CC2529D6460D0059C6D4 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC1B29D6460D0059C6D4 /* Order+CoreDataClass.swift */; };
+		7E22CC2629D6460D0059C6D4 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC1C29D6460D0059C6D4 /* Order+CoreDataProperties.swift */; };
+		7E22CC2929D6460D0059C6D4 /* Product_Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC1F29D6460D0059C6D4 /* Product_Post+CoreDataClass.swift */; };
+		7E22CC2A29D6460D0059C6D4 /* Product_Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC2029D6460D0059C6D4 /* Product_Post+CoreDataProperties.swift */; };
+		7E22CC2D29D6559B0059C6D4 /* TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC2C29D6559B0059C6D4 /* TypeViewController.swift */; };
+		7E22CC2F29D65E850059C6D4 /* AddTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC2E29D65E850059C6D4 /* AddTypeViewController.swift */; };
+		7E22CC3329D661F60059C6D4 /* TypeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC3229D661F60059C6D4 /* TypeViewCell.swift */; };
+		7E22CC3529D6907B0059C6D4 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC3429D6907B0059C6D4 /* CompanyViewController.swift */; };
+		7E22CC3729D6908F0059C6D4 /* AddCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC3629D6908F0059C6D4 /* AddCompanyViewController.swift */; };
+		7E22CC3929D696E30059C6D4 /* CompanyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22CC3829D696E30059C6D4 /* CompanyViewCell.swift */; };
 		7E68E94829D20D5A00830807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68E94729D20D5A00830807 /* AppDelegate.swift */; };
 		7E68E94A29D20D5A00830807 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68E94929D20D5A00830807 /* SceneDelegate.swift */; };
 		7E68E94C29D20D5A00830807 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E68E94B29D20D5A00830807 /* ViewController.swift */; };
 		7E68E94F29D20D5A00830807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E68E94D29D20D5A00830807 /* Main.storyboard */; };
-		7E68E95229D20D5A00830807 /* Assignment_8.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E68E95029D20D5A00830807 /* Assignment_8.xcdatamodeld */; };
 		7E68E95429D20D5B00830807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E68E95329D20D5B00830807 /* Assets.xcassets */; };
 		7E68E95729D20D5B00830807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E68E95529D20D5B00830807 /* LaunchScreen.storyboard */; };
+		7EE1A1C429D78AE400909D46 /* UpdateTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1C329D78AE400909D46 /* UpdateTypeViewController.swift */; };
+		7EE1A1C629D7900000909D46 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1C529D7900000909D46 /* ProductViewController.swift */; };
+		7EE1A1C829D7902B00909D46 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1C729D7902B00909D46 /* AddProductViewController.swift */; };
+		7EE1A1CA29D7904100909D46 /* UpdateCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1C929D7904100909D46 /* UpdateCompanyViewController.swift */; };
+		7EE1A1CC29D7905000909D46 /* UpdateProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1CB29D7905000909D46 /* UpdateProductViewController.swift */; };
+		7EE1A1CE29D7A03F00909D46 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1CD29D7A03F00909D46 /* ProductViewCell.swift */; };
+		7EE1A1D029D7A92E00909D46 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1CF29D7A92E00909D46 /* PostViewController.swift */; };
+		7EE1A1D229D7A93A00909D46 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1D129D7A93A00909D46 /* AddPostViewController.swift */; };
+		7EE1A1D429D7E47700909D46 /* UpdatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1D329D7E47700909D46 /* UpdatePostViewController.swift */; };
+		7EE1A1D629D7EA2200909D46 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1D529D7EA2200909D46 /* PostViewCell.swift */; };
+		7EE1A1D829D7EE6A00909D46 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1D729D7EE6A00909D46 /* OrderViewController.swift */; };
+		7EE1A1DA29D7F0B600909D46 /* OrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1D929D7F0B600909D46 /* OrderViewCell.swift */; };
+		7EE1A1DC29D8A9F300909D46 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1DB29D8A9F300909D46 /* SearchViewController.swift */; };
+		7EE1A1DF29D8CE0400909D46 /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1DD29D8CE0400909D46 /* Company+CoreDataClass.swift */; };
+		7EE1A1E029D8CE0400909D46 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1DE29D8CE0400909D46 /* Company+CoreDataProperties.swift */; };
+		7EE1A1E229D9DBC300909D46 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1E129D9DBC300909D46 /* KeyboardLayoutConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E22CBEC29D640310059C6D4 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		7E22CC1729D6460D0059C6D4 /* ProductType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E22CC1829D6460D0059C6D4 /* ProductType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E22CC1929D6460D0059C6D4 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E22CC1A29D6460D0059C6D4 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E22CC1B29D6460D0059C6D4 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E22CC1C29D6460D0059C6D4 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E22CC1F29D6460D0059C6D4 /* Product_Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product_Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E22CC2029D6460D0059C6D4 /* Product_Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product_Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E22CC2C29D6559B0059C6D4 /* TypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewController.swift; sourceTree = "<group>"; };
+		7E22CC2E29D65E850059C6D4 /* AddTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTypeViewController.swift; sourceTree = "<group>"; };
+		7E22CC3229D661F60059C6D4 /* TypeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewCell.swift; sourceTree = "<group>"; };
+		7E22CC3429D6907B0059C6D4 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		7E22CC3629D6908F0059C6D4 /* AddCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyViewController.swift; sourceTree = "<group>"; };
+		7E22CC3829D696E30059C6D4 /* CompanyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewCell.swift; sourceTree = "<group>"; };
 		7E68E94429D20D5A00830807 /* Assignment-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E68E94729D20D5A00830807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E68E94929D20D5A00830807 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E68E94B29D20D5A00830807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E68E94E29D20D5A00830807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7E68E95129D20D5A00830807 /* Assignment_8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment_8.xcdatamodel; sourceTree = "<group>"; };
 		7E68E95329D20D5B00830807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E68E95629D20D5B00830807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E68E95829D20D5B00830807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EE1A1C329D78AE400909D46 /* UpdateTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTypeViewController.swift; sourceTree = "<group>"; };
+		7EE1A1C529D7900000909D46 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		7EE1A1C729D7902B00909D46 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		7EE1A1C929D7904100909D46 /* UpdateCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCompanyViewController.swift; sourceTree = "<group>"; };
+		7EE1A1CB29D7905000909D46 /* UpdateProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProductViewController.swift; sourceTree = "<group>"; };
+		7EE1A1CD29D7A03F00909D46 /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		7EE1A1CF29D7A92E00909D46 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		7EE1A1D129D7A93A00909D46 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		7EE1A1D329D7E47700909D46 /* UpdatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePostViewController.swift; sourceTree = "<group>"; };
+		7EE1A1D529D7EA2200909D46 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
+		7EE1A1D729D7EE6A00909D46 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		7EE1A1D929D7F0B600909D46 /* OrderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewCell.swift; sourceTree = "<group>"; };
+		7EE1A1DB29D8A9F300909D46 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7EE1A1DD29D8CE0400909D46 /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7EE1A1DE29D8CE0400909D46 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7EE1A1E129D9DBC300909D46 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +99,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E22CC0229D645EC0059C6D4 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				7E22CC1729D6460D0059C6D4 /* ProductType+CoreDataClass.swift */,
+				7EE1A1DD29D8CE0400909D46 /* Company+CoreDataClass.swift */,
+				7EE1A1DE29D8CE0400909D46 /* Company+CoreDataProperties.swift */,
+				7E22CC1829D6460D0059C6D4 /* ProductType+CoreDataProperties.swift */,
+				7E22CC1929D6460D0059C6D4 /* Product+CoreDataClass.swift */,
+				7E22CC1A29D6460D0059C6D4 /* Product+CoreDataProperties.swift */,
+				7E22CC1B29D6460D0059C6D4 /* Order+CoreDataClass.swift */,
+				7E22CC1C29D6460D0059C6D4 /* Order+CoreDataProperties.swift */,
+				7E22CC1F29D6460D0059C6D4 /* Product_Post+CoreDataClass.swift */,
+				7E22CC2029D6460D0059C6D4 /* Product_Post+CoreDataProperties.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		7E22CC2B29D6557C0059C6D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E22CC2C29D6559B0059C6D4 /* TypeViewController.swift */,
+				7E22CC2E29D65E850059C6D4 /* AddTypeViewController.swift */,
+				7E22CC3229D661F60059C6D4 /* TypeViewCell.swift */,
+				7E22CC3429D6907B0059C6D4 /* CompanyViewController.swift */,
+				7E22CC3629D6908F0059C6D4 /* AddCompanyViewController.swift */,
+				7E22CC3829D696E30059C6D4 /* CompanyViewCell.swift */,
+				7EE1A1C329D78AE400909D46 /* UpdateTypeViewController.swift */,
+				7EE1A1C529D7900000909D46 /* ProductViewController.swift */,
+				7EE1A1C729D7902B00909D46 /* AddProductViewController.swift */,
+				7EE1A1C929D7904100909D46 /* UpdateCompanyViewController.swift */,
+				7EE1A1CB29D7905000909D46 /* UpdateProductViewController.swift */,
+				7EE1A1CD29D7A03F00909D46 /* ProductViewCell.swift */,
+				7EE1A1CF29D7A92E00909D46 /* PostViewController.swift */,
+				7EE1A1D129D7A93A00909D46 /* AddPostViewController.swift */,
+				7EE1A1D329D7E47700909D46 /* UpdatePostViewController.swift */,
+				7EE1A1D529D7EA2200909D46 /* PostViewCell.swift */,
+				7EE1A1D729D7EE6A00909D46 /* OrderViewController.swift */,
+				7EE1A1D929D7F0B600909D46 /* OrderViewCell.swift */,
+				7EE1A1DB29D8A9F300909D46 /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		7E68E93B29D20D5A00830807 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +161,10 @@
 		7E68E94629D20D5A00830807 /* Assignment-8 */ = {
 			isa = PBXGroup;
 			children = (
+				7EE1A1E129D9DBC300909D46 /* KeyboardLayoutConstraint.swift */,
+				7E22CC2B29D6557C0059C6D4 /* ViewController */,
+				7E22CC0229D645EC0059C6D4 /* DataModels */,
+				7E22CBEB29D640310059C6D4 /* DataModel.xcdatamodeld */,
 				7E68E94729D20D5A00830807 /* AppDelegate.swift */,
 				7E68E94929D20D5A00830807 /* SceneDelegate.swift */,
 				7E68E94B29D20D5A00830807 /* ViewController.swift */,
@@ -65,7 +172,6 @@
 				7E68E95329D20D5B00830807 /* Assets.xcassets */,
 				7E68E95529D20D5B00830807 /* LaunchScreen.storyboard */,
 				7E68E95829D20D5B00830807 /* Info.plist */,
-				7E68E95029D20D5A00830807 /* Assignment_8.xcdatamodeld */,
 			);
 			path = "Assignment-8";
 			sourceTree = "<group>";
@@ -141,10 +247,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E22CC2F29D65E850059C6D4 /* AddTypeViewController.swift in Sources */,
+				7EE1A1D829D7EE6A00909D46 /* OrderViewController.swift in Sources */,
+				7EE1A1CE29D7A03F00909D46 /* ProductViewCell.swift in Sources */,
 				7E68E94C29D20D5A00830807 /* ViewController.swift in Sources */,
-				7E68E95229D20D5A00830807 /* Assignment_8.xcdatamodeld in Sources */,
+				7EE1A1DA29D7F0B600909D46 /* OrderViewCell.swift in Sources */,
+				7E22CC2229D6460D0059C6D4 /* ProductType+CoreDataProperties.swift in Sources */,
+				7EE1A1D429D7E47700909D46 /* UpdatePostViewController.swift in Sources */,
+				7E22CC2629D6460D0059C6D4 /* Order+CoreDataProperties.swift in Sources */,
+				7E22CC2A29D6460D0059C6D4 /* Product_Post+CoreDataProperties.swift in Sources */,
+				7EE1A1CA29D7904100909D46 /* UpdateCompanyViewController.swift in Sources */,
+				7EE1A1DC29D8A9F300909D46 /* SearchViewController.swift in Sources */,
+				7E22CC2D29D6559B0059C6D4 /* TypeViewController.swift in Sources */,
+				7E22CC3329D661F60059C6D4 /* TypeViewCell.swift in Sources */,
+				7E22CC2129D6460D0059C6D4 /* ProductType+CoreDataClass.swift in Sources */,
+				7E22CC3929D696E30059C6D4 /* CompanyViewCell.swift in Sources */,
+				7E22CC2329D6460D0059C6D4 /* Product+CoreDataClass.swift in Sources */,
+				7EE1A1C429D78AE400909D46 /* UpdateTypeViewController.swift in Sources */,
+				7EE1A1DF29D8CE0400909D46 /* Company+CoreDataClass.swift in Sources */,
+				7E22CC3729D6908F0059C6D4 /* AddCompanyViewController.swift in Sources */,
+				7EE1A1E229D9DBC300909D46 /* KeyboardLayoutConstraint.swift in Sources */,
+				7EE1A1C629D7900000909D46 /* ProductViewController.swift in Sources */,
+				7EE1A1CC29D7905000909D46 /* UpdateProductViewController.swift in Sources */,
+				7EE1A1D029D7A92E00909D46 /* PostViewController.swift in Sources */,
+				7E22CBED29D640310059C6D4 /* DataModel.xcdatamodeld in Sources */,
+				7EE1A1D229D7A93A00909D46 /* AddPostViewController.swift in Sources */,
+				7EE1A1C829D7902B00909D46 /* AddProductViewController.swift in Sources */,
 				7E68E94829D20D5A00830807 /* AppDelegate.swift in Sources */,
+				7EE1A1D629D7EA2200909D46 /* PostViewCell.swift in Sources */,
+				7E22CC2929D6460D0059C6D4 /* Product_Post+CoreDataClass.swift in Sources */,
+				7E22CC3529D6907B0059C6D4 /* CompanyViewController.swift in Sources */,
+				7E22CC2429D6460D0059C6D4 /* Product+CoreDataProperties.swift in Sources */,
+				7E22CC2529D6460D0059C6D4 /* Order+CoreDataClass.swift in Sources */,
 				7E68E94A29D20D5A00830807 /* SceneDelegate.swift in Sources */,
+				7EE1A1E029D8CE0400909D46 /* Company+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,13 +500,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7E68E95029D20D5A00830807 /* Assignment_8.xcdatamodeld */ = {
+		7E22CBEB29D640310059C6D4 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7E68E95129D20D5A00830807 /* Assignment_8.xcdatamodel */,
+				7E22CBEC29D640310059C6D4 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = 7E68E95129D20D5A00830807 /* Assignment_8.xcdatamodel */;
-			path = Assignment_8.xcdatamodeld;
+			currentVersion = 7E22CBEC29D640310059C6D4 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
