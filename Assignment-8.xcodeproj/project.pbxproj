@@ -28,6 +28,7 @@
 		7E68E94F29D20D5A00830807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E68E94D29D20D5A00830807 /* Main.storyboard */; };
 		7E68E95429D20D5B00830807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E68E95329D20D5B00830807 /* Assets.xcassets */; };
 		7E68E95729D20D5B00830807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E68E95529D20D5B00830807 /* LaunchScreen.storyboard */; };
+		7EBA115F29DF806700D1CFBD /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA115E29DF806700D1CFBD /* Company.swift */; };
 		7EE1A1C429D78AE400909D46 /* UpdateTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1C329D78AE400909D46 /* UpdateTypeViewController.swift */; };
 		7EE1A1C629D7900000909D46 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1C529D7900000909D46 /* ProductViewController.swift */; };
 		7EE1A1C829D7902B00909D46 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1A1C729D7902B00909D46 /* AddProductViewController.swift */; };
@@ -70,6 +71,7 @@
 		7E68E95329D20D5B00830807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E68E95629D20D5B00830807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E68E95829D20D5B00830807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EBA115E29DF806700D1CFBD /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		7EE1A1C329D78AE400909D46 /* UpdateTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTypeViewController.swift; sourceTree = "<group>"; };
 		7EE1A1C529D7900000909D46 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		7EE1A1C729D7902B00909D46 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				7E22CC1C29D6460D0059C6D4 /* Order+CoreDataProperties.swift */,
 				7E22CC1F29D6460D0059C6D4 /* Product_Post+CoreDataClass.swift */,
 				7E22CC2029D6460D0059C6D4 /* Product_Post+CoreDataProperties.swift */,
+				7EBA115E29DF806700D1CFBD /* Company.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				7EE1A1D629D7EA2200909D46 /* PostViewCell.swift in Sources */,
 				7E22CC2929D6460D0059C6D4 /* Product_Post+CoreDataClass.swift in Sources */,
 				7E22CC3529D6907B0059C6D4 /* CompanyViewController.swift in Sources */,
+				7EBA115F29DF806700D1CFBD /* Company.swift in Sources */,
 				7E22CC2429D6460D0059C6D4 /* Product+CoreDataProperties.swift in Sources */,
 				7E22CC2529D6460D0059C6D4 /* Order+CoreDataClass.swift in Sources */,
 				7E68E94A29D20D5A00830807 /* SceneDelegate.swift in Sources */,

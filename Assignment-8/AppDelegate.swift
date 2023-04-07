@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import SystemConfiguration
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var companyId=1
     static var orderId=1
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         do {
@@ -76,7 +77,76 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         catch{
             print("No Data")
         }
+        let url = URL(string: "https://6429924debb1476fcc4c36b2.mockapi.io/company");
+        let reachability = SCNetworkReachabilityCreateWithName(nil, "6429924debb1476fcc4c36b2.mockapi.io/company")
+        var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags()
+        SCNetworkReachabilityGetFlags(reachability!, &flags)
+
+        if !isNetworkReachable(with: flags) {
+            print("No Api Found")
+        }
+        // Do any additional setup after loading the view.
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if let error = error {
+                // Handle API request error
+                print("Error: \(error)")
+                return
+            }
+
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                // Handle invalid HTTP response
+                print("Invalid HTTP response")
+                return
+            }
+
+            guard let data = data else {
+                // Handle missing API response data
+                print("Missing API response data")
+                return
+            }
+
+            do {
+                let decoder = JSONDecoder()
+                let companyList = try decoder.decode([CompanyJson].self, from: data)
+                for companies in companyList{
+                    var company=Company(context: self.persistentContainer.viewContext)
+                    company.id=Int64(companies.id + "3") ?? 0
+                    company.name=companies.name
+                    company.country=companies.country
+                    company.zip=Int64(companies.zipcode) ?? 0
+                    company.address=companies.address
+                    company.companyType=companies.companyType
+                   let imageUrlString = companies.logo
+                    if let imageUrl = URL(string: imageUrlString) {
+                        let session = URLSession.shared
+                        let dataTask = session.dataTask(with: imageUrl) { (data, response, error) in
+                            if let imageData = data {
+                                DispatchQueue.main.async {
+                                    company.logo=imageData
+                                }
+                            } else if let error = error {
+                                print("Error downloading image: \(error)")
+                            }
+                        }
+                        dataTask.resume()
+                    }
+                   // try? self.saveContext()
+                }
+            } catch {
+                // Handle JSON parsing error
+                print("Error parsing JSON: \(error)")
+            }
+        }
+        task.resume()
         return true
+    }
+    func isNetworkReachable(with flags: SCNetworkReachabilityFlags) -> Bool {
+        let isReachable = flags.contains(.reachable)
+        let needsConnection = flags.contains(.connectionRequired)
+        let canConnectAutomatically = flags.contains(.connectionOnDemand) || flags.contains(.connectionOnTraffic)
+        let canConnectWithoutUserInteraction = canConnectAutomatically && !flags.contains(.interventionRequired)
+        return isReachable && (!needsConnection || canConnectWithoutUserInteraction)
     }
 
     // MARK: UISceneSession Lifecycle
