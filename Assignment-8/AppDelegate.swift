@@ -131,7 +131,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         }
                         dataTask.resume()
                     }
-                   // try? self.saveContext()
+                    try? self.saveContext()
                 }
             } catch {
                 // Handle JSON parsing error
