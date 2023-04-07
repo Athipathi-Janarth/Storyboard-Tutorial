@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import SystemConfiguration
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.shared.enable = true
         do {
             var type_items=try persistentContainer.viewContext.fetch(ProductType.fetchRequest())
             if let typelastID = type_items.last?.id {
@@ -111,7 +113,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let companyList = try decoder.decode([CompanyJson].self, from: data)
                 for companies in companyList{
                     var company=Company(context: self.persistentContainer.viewContext)
-                    company.id=Int64(companies.id + "3") ?? 0
+                    var id=Int(companies.id)
+                    company.id = Int64((id ?? 0) + AppDelegate.typeId)
                     company.name=companies.name
                     company.country=companies.country
                     company.zip=Int64(companies.zipcode) ?? 0
@@ -131,7 +134,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         }
                         dataTask.resume()
                     }
-                    try? self.saveContext()
+                    //try? self.saveContext()
                 }
             } catch {
                 // Handle JSON parsing error
