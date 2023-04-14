@@ -59,9 +59,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             var type_items=try persistentContainer.viewContext.fetch(Company.fetchRequest())
             if let typelastID = type_items.last?.id {
-                AppDelegate.companyId = Int(typelastID)+1
+                AppDelegate.companyId = Int(typelastID)
             } else {
-                AppDelegate.companyId = 1
+                AppDelegate.companyId = 0
             }
         }
         catch{
@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 for companies in companyList{
                     var company=Company(context: self.persistentContainer.viewContext)
                     var id=Int(companies.id)
-                    company.id = Int64((id ?? 0) + AppDelegate.typeId)
+                    company.id = Int64((id ?? 0) + AppDelegate.companyId)
                     company.name=companies.name
                     company.country=companies.country
                     company.zip=Int64(companies.zipcode) ?? 0
